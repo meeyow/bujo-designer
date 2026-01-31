@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ProtectedRoute } from '@/components/auth';
+// import { ProtectedRoute } from '@/components/auth';
 import { Toolbar, Tool } from '@/components/editor/Toolbar';
 import { Canvas } from '@/components/editor/Canvas';
 import { PropertiesPanel } from '@/components/editor/PropertiesPanel';
@@ -42,7 +42,7 @@ export default function EditorPage() {
   };
 
   return (
-    <ProtectedRoute>
+    // <ProtectedRoute>
       <div className="h-screen w-screen flex flex-col overflow-hidden bg-background">
         {/* Top Navigation */}
         <EditorHeader
@@ -94,6 +94,6 @@ export default function EditorPage() {
           onSelectTemplate={handleSelectTemplate}
         />
       </div>
-    </ProtectedRoute>
+    // </ProtectedRoute>
   );
 }
